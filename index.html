@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/javascript.js" defer></script>
+    <title>Odin Sign-Up Form</title>
+</head>
+
+<body>
+    <section class="leftCol">
+        <img src="img/mtn-bg.jpg" alt="Mountain Backdrop">
+        <div class="logoBackground">
+            <img src="img/igloo-logo.svg" alt="Igloo Logo" id="logo">
+        </div>
+        <p>Photo by Jarod Lovekamp</p>
+
+    </section>
+    <section class="rightCol">
+        <div>
+            <p>
+                This is not a real online service! You know these
+                mountains are calling to you! You need these mountains to
+                realize your deepest dreams. Sign up <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+
+            <form action="#" class="signUpForm" method="post">
+                <h2>Let's do this!</h2>
+
+                <fieldset>
+                    <legend>Name</legend>
+                    <label for="firstName">First:
+                        <input type="text" name="name" id="firstName" required>
+                    </label>
+                    <label for="lastName">Last:
+                        <input type="text" name="name" id="lastName">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact</legend>
+                    <label for="userEmail">Email: 
+                        <input type="email" id="userEmail" name="email" required>
+                    </label>
+                    <label for="userPhone">Phone: 
+                        <input type="tel" name="userPhone" id="phone">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Password</legend>
+                    <label for="userPassword">Password:
+                        <input type="password" name="userPassword" id="userPassword" required>
+                    </label>
+                    <label for="confirmPassword">Confirm Password:
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
+                    </label>
+                </fieldset>
+
+                <button:Submit>Create Account</button:Submit>
+            </form>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+@font-face{
+    font-family: zephy;
+    src: url(../fonts/zephyreg.ttf);
+}
+
+
+
+:root{
+    
+    font-family: zephy;
+}
+
+body{
+    width: 80%;
+    margin: 10px 10%;
+    display: flex;
+}
+
+section.leftCol{
+    width: 40%;
+}
+
+.rightCol div{
+    width: 100%;
+    height: 100%;
+    background-color: #bbb;
+}
+
+.leftCol img{
+    width: 100%;
+}
+
+section.rightCol{
+    width: 70%;
+}
+
+body{
+    border: 2px solid black;
+    border-radius: 4px;
+}
