@@ -12,11 +12,12 @@
 
 <body>
     <section class="leftCol">
-        <img src="img/mtn-bg.jpg" alt="Mountain Backdrop">
+        <img src="img/mtn-bg.jpg" alt="Mountain Backdrop" class="backgroundImage">
         <div class="logoBackground">
-            <img src="img/igloo-logo.svg" alt="Igloo Logo" id="logo">
+           <img src="img/igloo-logo.svg" alt="Igloo Logo" id="logo">
+           <h2>Green Mountain</h2>
         </div>
-        <p>Photo by Jarod Lovekamp</p>
+        <p class="credit">Photo by Jarod Lovekamp</p>
 
     </section>
     <section class="rightCol">
@@ -29,7 +30,7 @@
             <p>You <em>know</em> you want to.</p>
 
             <form action="#" class="signUpForm" method="post">
-                <h2>Let's do this!</h2>
+                <h2>Sign Up</h2>
 
                 <fieldset>
                     <legend>Name</legend>
@@ -44,7 +45,8 @@
                 <fieldset>
                     <legend>Contact</legend>
                     <label for="userEmail">Email: 
-                        <input type="email" id="userEmail" name="email" required>
+                        <input type="email" id="userEmail" name="email" required 
+                        pattern="[a-z|1-9|-]{3,}@[a-z]{3,}\.([a-z]{3,}|[a-z]{2}\.[a-z]{2})\i" title="***@***.***">
                     </label>
                     <label for="userPhone">Phone: 
                         <input type="tel" name="userPhone" id="phone">
@@ -56,12 +58,12 @@
                     <label for="userPassword">Password:
                         <input type="password" name="userPassword" id="userPassword" required>
                     </label>
-                    <label for="confirmPassword">Confirm Password:
+                    <label for="confirmPassword">Confirm:
                         <input type="password" name="confirmPassword" id="confirmPassword" required>
                     </label>
                 </fieldset>
 
-                <button:Submit>Create Account</button:Submit>
+                <button type="submit">Create Account</button>
             </form>
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
